@@ -1,0 +1,185 @@
+===== MLP Best Params =====
+{'learning_rate_init': 0.0005, 'max_iter': 300}
+MLP Best CV Accuracy: 0.9110
+
+===== MLP - Classification Report (Dev) =====
+              precision    recall  f1-score   support
+
+      Lfront       1.00      1.00      1.00       473
+       Lhood       1.00      1.00      1.00       245
+      Rfront       1.00      1.00      1.00       474
+       Rhood       1.00      1.00      1.00       244
+        back       0.73      0.88      0.80      1267
+       front       0.78      0.58      0.66       808
+  front_left       1.00      1.00      1.00       459
+ front_right       1.00      1.00      1.00       459
+        left       0.65      0.52      0.58       160
+      left_0       0.09      0.03      0.05        98
+    lfsleeve       1.00      1.00      1.00       698
+    rfsleeve       1.00      1.00      1.00       698
+       right       0.63      0.68      0.65       160
+     right_0       0.21      0.19      0.20        97
+ skirt_front       0.95      1.00      0.98       524
+    top_back       0.97      1.00      0.99       539
+   top_front       0.99      1.00      0.99       539
+     up_back       1.00      1.00      1.00       214
+    up_front       1.00      1.00      1.00       214
+    wb_front       1.00      1.00      1.00       432
+
+    accuracy                           0.91      8802
+   macro avg       0.85      0.84      0.84      8802
+weighted avg       0.90      0.91      0.90      8802
+
+
+===== MLP - Classification Report (Test) =====
+              precision    recall  f1-score   support
+
+      Lfront     1.0000    1.0000    1.0000       474
+       Lhood     1.0000    1.0000    1.0000       244
+      Rfront     1.0000    1.0000    1.0000       473
+       Rhood     1.0000    1.0000    1.0000       245
+        back     0.7482    0.8958    0.8154      1267
+       front     0.8073    0.6007    0.6889       809
+  front_left     1.0000    1.0000    1.0000       458
+ front_right     1.0000    1.0000    1.0000       458
+        left     0.6562    0.5250    0.5833       160
+      left_0     0.2632    0.1031    0.1481        97
+    lfsleeve     1.0000    1.0000    1.0000       698
+    rfsleeve     1.0000    1.0000    1.0000       698
+       right     0.6114    0.6687    0.6388       160
+     right_0     0.2143    0.1837    0.1978        98
+ skirt_front     0.9545    1.0000    0.9767       525
+    top_back     0.9835    0.9963    0.9899       539
+   top_front     0.9730    1.0000    0.9863       540
+     up_back     1.0000    1.0000    1.0000       214
+    up_front     1.0000    1.0000    1.0000       214
+    wb_front     1.0000    1.0000    1.0000       431
+
+    accuracy                         0.9145      8802
+   macro avg     0.8606    0.8487    0.8513      8802
+weighted avg     0.9105    0.9145    0.9095      8802
+
+
+===== XGBoost Best Params =====
+{'learning_rate': 0.001, 'max_depth': 12, 'n_estimators': 100}
+XGBoost Best CV Accuracy: 0.9150
+
+===== XGBoost - Classification Report (Dev) =====
+              precision    recall  f1-score   support
+
+      Lfront       1.00      1.00      1.00       473
+       Lhood       1.00      1.00      1.00       245
+      Rfront       1.00      1.00      1.00       474
+       Rhood       1.00      1.00      1.00       244
+        back       0.77      0.89      0.82      1267
+       front       0.81      0.58      0.67       808
+  front_left       1.00      1.00      1.00       459
+ front_right       1.00      1.00      1.00       459
+        left       0.64      0.42      0.51       160
+      left_0       0.15      0.22      0.18        98
+    lfsleeve       1.00      1.00      1.00       698
+    rfsleeve       1.00      1.00      1.00       698
+       right       0.57      0.77      0.65       160
+     right_0       0.20      0.05      0.08        97
+ skirt_front       0.95      1.00      0.98       524
+    top_back       0.97      1.00      0.99       539
+   top_front       0.99      1.00      0.99       539
+     up_back       1.00      1.00      1.00       214
+    up_front       1.00      1.00      1.00       214
+    wb_front       1.00      1.00      1.00       432
+
+    accuracy                           0.91      8802
+   macro avg       0.85      0.85      0.84      8802
+weighted avg       0.91      0.91      0.91      8802
+
+
+===== XGBoost - Classification Report (Test) =====
+              precision    recall  f1-score   support
+
+      Lfront     1.0000    1.0000    1.0000       474
+       Lhood     1.0000    1.0000    1.0000       244
+      Rfront     1.0000    1.0000    1.0000       473
+       Rhood     1.0000    1.0000    1.0000       245
+        back     0.7693    0.8950    0.8274      1267
+       front     0.7892    0.5785    0.6676       809
+  front_left     1.0000    1.0000    1.0000       458
+ front_right     1.0000    1.0000    1.0000       458
+        left     0.6238    0.3937    0.4828       160
+      left_0     0.1852    0.2577    0.2155        97
+    lfsleeve     1.0000    1.0000    1.0000       698
+    rfsleeve     1.0000    1.0000    1.0000       698
+       right     0.5571    0.7625    0.6438       160
+     right_0     0.1111    0.0306    0.0480        98
+ skirt_front     0.9545    1.0000    0.9767       525
+    top_back     0.9835    0.9981    0.9908       539
+   top_front     0.9818    0.9981    0.9899       540
+     up_back     1.0000    1.0000    1.0000       214
+    up_front     1.0000    1.0000    1.0000       214
+    wb_front     1.0000    1.0000    1.0000       431
+
+    accuracy                         0.9116      8802
+   macro avg     0.8478    0.8457    0.8421      8802
+weighted avg     0.9088    0.9116    0.9069      8802
+
+
+===== CatBoost Best Params =====
+{'depth': 5, 'iterations': 200, 'learning_rate': 0.01}
+CatBoost Best CV Accuracy: 0.8988
+
+===== CatBoost - Classification Report (Dev) =====
+              precision    recall  f1-score   support
+
+      Lfront       1.00      1.00      1.00       473
+       Lhood       1.00      1.00      1.00       245
+      Rfront       1.00      1.00      1.00       474
+       Rhood       1.00      1.00      1.00       244
+        back       0.75      0.87      0.81      1267
+       front       0.73      0.55      0.63       808
+  front_left       1.00      1.00      1.00       459
+ front_right       1.00      1.00      1.00       459
+        left       0.34      0.24      0.28       160
+      left_0       0.00      0.00      0.00        98
+    lfsleeve       1.00      1.00      1.00       698
+    rfsleeve       1.00      1.00      1.00       698
+       right       0.30      0.59      0.40       160
+     right_0       0.00      0.00      0.00        97
+ skirt_front       0.95      1.00      0.98       524
+    top_back       0.94      0.99      0.97       539
+   top_front       0.97      1.00      0.98       539
+     up_back       1.00      1.00      1.00       214
+    up_front       1.00      1.00      1.00       214
+    wb_front       1.00      1.00      1.00       432
+
+    accuracy                           0.90      8802
+   macro avg       0.80      0.81      0.80      8802
+weighted avg       0.88      0.90      0.89      8802
+
+
+===== CatBoost - Classification Report (Test) =====
+              precision    recall  f1-score   support
+
+      Lfront     1.0000    1.0000    1.0000       474
+       Lhood     1.0000    1.0000    1.0000       244
+      Rfront     1.0000    1.0000    1.0000       473
+       Rhood     1.0000    1.0000    1.0000       245
+        back     0.7544    0.8800    0.8124      1267
+       front     0.7435    0.5661    0.6428       809
+  front_left     1.0000    1.0000    1.0000       458
+ front_right     1.0000    1.0000    1.0000       458
+        left     0.3500    0.2625    0.3000       160
+      left_0     0.0000    0.0000    0.0000        97
+    lfsleeve     1.0000    1.0000    1.0000       698
+    rfsleeve     1.0000    1.0000    1.0000       698
+       right     0.2908    0.5563    0.3820       160
+     right_0     0.0000    0.0000    0.0000        98
+ skirt_front     0.9545    1.0000    0.9767       525
+    top_back     0.9449    0.9870    0.9655       539
+   top_front     0.9609    1.0000    0.9800       540
+     up_back     1.0000    1.0000    1.0000       214
+    up_front     1.0000    1.0000    1.0000       214
+    wb_front     1.0000    1.0000    1.0000       431
+
+    accuracy                         0.8984      8802
+   macro avg     0.8000    0.8126    0.8030      8802
+weighted avg     0.8857    0.8984    0.8893      8802
+
